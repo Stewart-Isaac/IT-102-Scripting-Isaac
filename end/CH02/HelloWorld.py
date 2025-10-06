@@ -8,6 +8,9 @@ your_name = input("Please enter your name: ")
 print("Hello ", your_name)
 if your_name == "Isaac":
     print("Nice name dummy")
+else:
+    print("My name is Isaac")
+
 print("Today is going to be a great day")
 
 age = input("Please enter your age: ")
