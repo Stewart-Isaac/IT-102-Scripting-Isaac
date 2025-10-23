@@ -5,19 +5,21 @@
 
 import os
 
-# Get current file directory
-script_path = os.path.abspath( __file__ )
-script_dir = os.path.dirname( script_path )
-# Build file path
-file_path = os.path.join(script_dir, "ips.txt")
 
-# Open file for reading
-ip_file = open(file_path, "r")
 
-# Read the contents of the file and print to screen
-ip_addresses = ip_file.read()
-print(ip_addresses)
+hackfile = open("hackme.txt", "r")
 
-# Close the file
-ip_file.close()
+name = hackfile.readline()
+color = hackfile.readline()
+petname = hackfile.readline()
+maiden = hackfile.readline()
+elementary = hackfile.readline()
 
+print("Here is someone to hack - information:")
+print("name: ", name)
+print("Fav color: ", color)
+print("Pet name: ", petname)
+print("Mother's maiden name: ", maiden)
+print("elementary school: ", elementary)
+
+hackfile.close()
